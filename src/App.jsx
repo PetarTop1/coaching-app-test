@@ -3,7 +3,7 @@ import "./index.css";
 function App() {
   return (
     <div className="App">
-      {/* navigation bar */} 
+      {/* navigation bar promena*/} 
 
       <header className="absolute z-30 bg-white w-full text-black">
         <nav className="bg-white max-w-[1080px] my-0 mx-auto font-outfit text-lg py-4">
