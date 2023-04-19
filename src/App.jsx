@@ -3,10 +3,10 @@ import "./index.css";
 function App() {
   return (
     <div className="App">
-      {/* navigation bar promena*/} 
+      {/* navigation bar promena*/}
 
       <header className="absolute z-30 bg-white w-full text-black">
-        <nav className="bg-white max-w-[1080px] my-0 mx-auto font-outfit text-lg py-4">
+        <nav className="bg-white max-w-[1080px] my-0 sm:mx-auto font-outfit text-lg py-4">
           <div className="flex justify-between">
             <div className="text-[24px]">Coaching App</div>
             <div className="flex gap-6">
@@ -24,9 +24,12 @@ function App() {
             id="image"
             className="h-screen flex flex-col justify-end overflow-clip bg-center bg-cover bg-no-repeat"
           >
-            <div className="w-[1080px] mx-auto my-auto">
+            <div className="max-w-[1080px] mx-auto my-auto">
               <div className="flex-col w-1/2">
-                <p id="head" className="text-6xl text-white leading-[90%]">
+                <p
+                  id="head"
+                  className="text-6xl text-white leading-[90%] sm"
+                >
                   "To dare,
                   <br /> that is the price of progress." <br />
                   <span className="text-4xl">-Victor Hugo</span>
@@ -38,7 +41,7 @@ function App() {
                   voluptate earum enim quidem eos, repudiandae beatae voluptas
                   quod labore.
                 </p>
-                <div id="btn" className="flex gap-6">
+                <div id="btn" className="flex flex-row justify-start gap-6">
                   <button className="bg-white font-thinn  px-14 rounded-full py-3 text-m">
                     Get started
                   </button>
@@ -53,9 +56,9 @@ function App() {
 
         {/* business coaching */}
 
-        <section className="w-[1080px] mx-auto pt-32 pb-20">
-          <div className="flex justify-between gap-9">
-            <div className="w-[540px] flex flex-col justify-center">
+        <section className="max-w-[1080px] mx-auto pt-32 pb-20">
+          <div className="flex justify-between gap-9 flex-row sm:flex-nowrap flex-wrap max-sm:px-6">
+            <div className="sm:flex-1 flex flex-col justify-center">
               <p id="head" className="text-6xl text-left">
                 Business Coaching
               </p>
@@ -73,7 +76,7 @@ function App() {
               </button>
             </div>
 
-            <div className="flex-col w-[540px]">
+            <div className="flex-col sm:flex-1 cursor-pointer ">
               <div className="group box-border flex justify-between py-4 px-10 bg-white ease-in duration-150 border-2 border-transparent rounded-xl shadow-lg mb-2 hover:border-2 hover:border-[#0F766E]">
                 <p id="head" className=" flex items-center text-xl">
                   LEADERSHIP COACHING
@@ -106,7 +109,7 @@ function App() {
 
         <section className="max-w-[1080px] mx-auto pb-20">
           <div className="flex justify-between gap-9 flex-row-reverse sm:flex-nowrap flex-wrap">
-            <div className="w-[540px] text-left flex flex-col justify-center">
+            <div className="w-1/2 flex flex-col justify-center">
               <p id="head" className="text-6xl text-left">
                 Life Coaching
               </p>
@@ -118,13 +121,13 @@ function App() {
               </p>
               <button
                 id="btn"
-                className="text-white bg-[#FF9F1C] border-2 px-24 rounded-full py-4 text-[28px] w-2/3"
+                className="text-white bg-[#FF9F1C] border-2 px-24 rounded-full py-4 text-[28px] drop-shadow w-2/3"
               >
                 Learn more
               </button>
             </div>
 
-            <div className="w-[540px]">
+            <div className="w-1/2 cursor-pointer">
               <div className="group flex justify-between py-4 px-10 bg-white ease-in duration-150 rounded-xl shadow-lg mb-2 border-2 border-transparent hover:border-2 hover:border-[#FF9F1C]">
                 <p id="head" className="p-5 text-xl">
                   RELATIONSHIP COACHING
@@ -300,11 +303,13 @@ function App() {
         <section className="max-w-[1080px] mx-auto pb-20">
           <div className="flex justify-between gap-5">
             <div>
-              <img
-                src="../img/coucica 1.png"
-                alt=""
-                className="rounded-full mx-auto"
-              />
+              <div className="relative top-20 drop-shadow-lg">
+                <img
+                  src="../img/coucica 1.png"
+                  alt=""
+                  className="rounded-full mx-auto"
+                />
+              </div>
               <div
                 id="paragraph"
                 className="text-center pt-20 pb-48 px-10 shadow-lg rounded-2xl"
@@ -319,11 +324,13 @@ function App() {
               </div>
             </div>
             <div>
-              <img
-                src="../img/coucica 1.png"
-                alt=""
-                className="rounded-full mx-auto"
-              />
+              <div className="relative top-20 drop-shadow-lg">
+                <img
+                  src="../img/coucica 1.png"
+                  alt=""
+                  className="rounded-full mx-auto"
+                />
+              </div>
               <div
                 id="paragraph"
                 className="text-center pt-20 pb-48 px-10 shadow-lg rounded-2xl"
@@ -338,11 +345,13 @@ function App() {
               </div>
             </div>
             <div>
-              <img
-                src="../img/coucica 1.png"
-                alt=""
-                className="rounded-full mx-auto"
-              />
+              <div className="relative top-20 drop-shadow-lg">
+                <img
+                  src="../img/coucica 1.png"
+                  alt=""
+                  className="rounded-full mx-auto"
+                />
+              </div>
               <div
                 id="paragraph"
                 className="text-center pt-20 pb-48 px-10 shadow-lg rounded-2xl"
@@ -377,7 +386,10 @@ function App() {
             </div>
           </div>
         </section>
+      </main>
 
+      {/* <footer  */}
+      <footer>
         <section className="max-w-[1080px] mx-auto py-20">
           <div className="flex justify-between">
             <div>
@@ -408,9 +420,9 @@ function App() {
             </div>
           </div>
         </section>
-      </main>
 
-      <footer className="py-2 bg-gradient-to-r from-[#0F766E] to-[#FF9F1C]"></footer>
+        <div className="py-2 bg-gradient-to-r from-[#0F766E] to-[#FF9F1C]"></div>
+      </footer>
     </div>
   );
 }
